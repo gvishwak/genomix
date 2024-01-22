@@ -1,0 +1,13 @@
+name: genomix
+
+channels:
+    - conda-forge
+
+dependencies:
+    - python=3.10
+    - pip
+    - sphinx
+    - sphinx_rtd_theme
+    - sphinx-automodapi
+    - nbsphinx
+
