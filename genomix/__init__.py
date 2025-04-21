@@ -1,10 +1,9 @@
-""" Genetic Algorithm python implementation.
+""" A Python implementation of real-valued genetic algorithms for hyperparameter optimization in machine learning, particularly focused on applications in chemistry and materials science.
 """
 
 __name__ = "Genomix"
 __version__ = "1.0"
 __author__ = "Gaurav Vishwakarma"
-__email__ = 'vishwakarma.g1v@gmail.com'
 
 
 __all__ = [
@@ -13,4 +12,6 @@ __all__ = [
 
 
 from .genetic_algorithm import GeneticAlgorithm
+from .__version__ import __version__
+
 

@@ -1,6 +1,8 @@
 import setuptools
-import os 
+import os
 import genomix
+
+from genomix.__version__ import __version__
 
 
 # Get the long description from the README file
@@ -8,14 +10,14 @@ readme_file = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'README.m
 with open(readme_file) as f:
     long_description = f.read()
 
+
 if __name__ == "__main__":
     setuptools.setup(
         name = genomix.__name__,
-        version = genomix.__version__,
-        author = genomix.__author__,
-        author_email = genomix.__email__,
+        version = __version__,
+        author = 'Gaurav Vishwakarma',
         project_urls = {'Source': 'https://github.com/gvishwak/genomix', },
-        description = 'A python implementation of genetic algorithm for solving real-valued optimization problems.',
+        description = 'A Python implementation of real-valued genetic algorithms for hyperparameter optimization in machine learning, particularly focused on applications in chemistry and materials science.',
         long_description = long_description,
         long_description_content_type = "text/markdown",
         keywords = ['Genetic Algorithm', ],
